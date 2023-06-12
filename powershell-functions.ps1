@@ -1,9 +1,12 @@
-$dev_folder = "C:\Users\idean\dev"
+# Dood's Stuff
 
+# dev folder
+$dev_folder = "C:\Users\idean\dev"
 function gpd {
     Set-Location $dev_folder
 }
 
+# ls functions
 function ld {
     Get-ChildItem -Attributes Directory
 }
@@ -20,7 +23,7 @@ function lro {
     Get-ChildItem -Attributes R
 }
 function lh {
-    Get-ChildItem -Attributes H
+    Get-ChildItem -Attributes Hidden
 }
 function la {
     Get-ChildItem -Attributes D, H, S, R, !Directory
